@@ -1,0 +1,67 @@
+div {
+    background-color: blue;
+    color: rgb(238, 248, 248);
+    font-size: large;
+}
+
+ /* Seleciona todos os elementos pares */
+div p:nth-child(even) {
+    color: deeppink;
+}
+
+/* Seleciona todos os elementos impares */
+div p:nth-child(odd) {
+    color: greenyellow;
+}
+
+/* Seleciona o primeiro filho */
+div p:first-child {
+    color: black;
+}
+
+/* Seleciona o ultimo filho */
+div p:last-child {
+    color: red;
+}
+
+/* O nth-child só irá selecionar se a tag p for a primeira da div, caso contrário nada será selecionado */
+ div p:nth-child(2) {
+    color: rgb(255, 115, 0);
+}
+/* Use o nth-of-type ele considera apenas items da tag especificada */
+div p:nth-of-type(3) {
+    color: yellow;
+}
+
+
+
+.grid {
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.grid-item {
+    border: 20px solid blue;
+    box-sizing: border-box;
+    color: black;
+    min-height: 50px;
+}
+
+/* Seleciona todos os elementos multipos de 2 */
+.grid-item:nth-child(2n) {
+    color: yellow;
+}
+
+/* Seleciona todos os elementos multipos de 2 + 1 */
+.grid-item:nth-child(2n +1) {
+    color: rgb(255, 115, 0);
+}
+
+/* Seleciona todos os elementos multipos de 3, -2 */
+.grid-item:nth-child(3n -2) {
+    color: violet;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações</title>
+    <style>
+        body {
+            background-color: rgba(133, 240, 248, 0.829);
+        }
+        mark {
+            background-color: rgb(250, 158, 121);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Sempre que quiser dar destaque ao texto e deixar em negrito use a tag &lt;strong&gt;. Assim o termo em destaque tem <strong>semântica ou seja significado</strong></p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Para deixar o termo em itálico ou em ênfase use a tag &lt;em&gt;. Para que o termo em destque seja <em>semãntico e tenha significado</em></p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar um texto marcador com a tag <mark>&lt;mark&gt;</mark><br>Essa tag marca um <mark>trecho do texto</mark> igual a um marcador comum. Sua cor padrão é amarelo, mas podemos muda-lá através do CSS ou a tag style.</p>
+    <h2>Texto grande e Pequeno</h2>
+    <p>A tag big se tornou obsoleta, mas a tag &lt;small&gt; ainda é válida e deixa o texto <small><mark>pequeno</mark></small>. Para criar um texto grande utilize a formatação do CSS.</p>
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar um texto como <del>excluído</del>  para indicar que ele deve ser lido, mas desconsiderado</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um texto como <ins>inserido</ins>  para dar uma ênfase e indicar que ele foi adiconado depois.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisa do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <h2>Pré Formatação</h2>
+    <p>a tag &lt;pre&gt; é utilizada para uma pré tabulação, dento dela cada tabulação, quebra de linha é contada. Exemplo: </p>
+    <pre>
+        <code>
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'O número {num} é par')
+else:
+    print(f'O número {num} é impar.')
+        </code>
+    </pre>
+</body>
+</html>

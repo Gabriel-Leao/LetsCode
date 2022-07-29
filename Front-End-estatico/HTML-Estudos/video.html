@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos em html</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <h2>Este vídeo está hospedado no meu servidor</h2>
+    <!-- Não é recomendado hospedar localmente, pois o arquivo é grande e consome muitos megas de tráfego de dados gerando grandes gastos -->
+    <video width="560" controls loop>
+        <source src="media/Naruto-Opening1.m4v" type="video/mp4">
+    </video>
+
+    <h1>Inserindo vídeos externos</h1>
+    <h2>Inserindo vídeos do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aJRu5ltxXjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Inserindo videos do vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/40448256?h=5540886a2c&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
