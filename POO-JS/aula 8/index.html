@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modularização</title>
+</head>
+<body>
+    <!-- Async carregar o arquivo e executa. Defer carrega o arquivo e espera os outros arquivos serem carregados para ser executado. -->
+    <!-- Se não colocar o type="module" a exportação vai dar erro -->
+    <script defer src="classes/Endereco.js" type="module"></script>
+    <script defer src="classes/Fabricante.js" type="module"></script>
+    <script defer src="classes/Televisao.js" type="module"></script>
+    <script defer src="classes/uso-de-classes.js" type="module"></script>
+</body>
+</html>

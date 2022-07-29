@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Leão da Silva">
+    <meta name="description" content="Projeto de currículo feito por Gabriel Leao, utilizando apenas html, css e JavaScript">
+    <meta name="keywords" content="Gabriel Leão, Gabriel Leao,">
+    <!--Importando a fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- Importando icones do box icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Importando icones do Line awesome -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/CSS/styles.css  ">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <title>Gabriel Leão da Silva</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Gabriel Leão da Silva</a>
+
+            <div class="nav__menu" id="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="bx bx-home nav__icon"></i>Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link"><i class="bx bx-user nav__icon"></i>Profile</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link"><i class="bx bx-book nav__icon"></i>Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link"><i class="bx bx-receipt nav__icon"></i>Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link"><i
+                                class="bx bx-briefcase-alt nav__icon"></i>Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link"><i class="bx bx-award nav__icon"></i>Certificates</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#languages" class="nav__link"><i class="las la-language nav__icon"></i>Languages</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bxs-moon toggle__icon'></i>
+                <input type="checkbox" name="theme" id="switch">
+                <label for="switch">Toggle</label>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+
+                <!-- HOME -->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/images/foto-perfil.png" alt="Foto de perfil" class="home__img">
+
+                            <h1 class="home__title"><strong>Gabriel Leão da Silva</strong> </h1>
+                            <h2 class="home__profession">Web Full Stack Developer</h2>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"> São Paulo - SP</i>
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"> gabriel.leao2507@gmail.com</i>
+                            </span>
+                            <span>
+                                <i class="bx bx-phone home__icon"> +55 (11) 94701-3466</i>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Social -->
+                <section class="social section" id="social">
+                    <h3 class="section-title">Social</h3>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://github.com/Gabriel-Leao" target="_blank" rel="external" class="social__link"><i
+                                class="bx bxl-github social__icon"></i>Gabriel-Leao</a>
+                        <a href="https://www.linkedin.com/in/gabriel-le%C3%A3o-da-silva-1b41b5190" target="_blank"
+                            rel="external" class="social__link"><i
+                                class="bx bxl-linkedin-square social__icon"></i>Gabriel-Leao-da-Silva</a>
+                    </div>
+                </section>
+
+                <!-- Profile -->
+                <section class="profile section" id="profile">
+                    <h3 class="section-title">Profile</h3>
+
+                    <p class="profile__description"> Olá meu nome é Gabriel leão e se você está <strong>procurando um
+                            programador</strong>, vocẽ veio ao lugar certo. Uma empresa que almeja crescer e oferecer um
+                        melhor atendimento aos seus clientes precisa de bons programadores.<br> Por isso eu tenho
+                        certeza que posso contribuir para o <strong>crescimento, aumento de produtividade e de lucro da
+                            sua instituição</strong>. Entre em contato e vou lhe mostrar como posso ajudar a sua empresa
+                        a alcançar suas metas.</p>
+                </section>
+
+                <!-- Education -->
+                <section class="education section" id="education">
+                    <h3 class="section-title">Education</h3>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Ensino médio completo</h3>
+                                <span class="education__studies">E. E. Padre Tiago Alberione</span>
+                                <span class="education__year">2015 - 2021</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Web Full Stack</h3>
+                                <span class="education__studies">Let's code</span>
+                                <span class="education__year">01/2022 - 06/2022</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">ProProfissão</h3>
+                                <span class="education__studies">Instituto PROA</span>
+                                <span class="education__year">02/2022 - 07/2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="skills section" id="skills">
+                    <h3 class="section-title">Skills</h3>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>HTML
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>CSS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>JavaScript
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>React
+                            </li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Nodejs
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>PostgreSQL
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>GitHub
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Testes automatizados
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resume__right">
+                <section class="experience section" id="experience">
+                    <h3 class="section-title">Experience</h3>
+
+                    <!-- Experience -->
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Estagiário</h3>
+                                <span>05/2021 - 12/2021 | Caixa Econômica Federal</span>
+                                <p class="experience__description">
+                                    Ajudar no atendimento ao cliente e na digitalização de documentos.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Certification -->
+                <section class="certificate section" id="certificates">
+                    <h3 class="section-title">Certificates</h3>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h4 class="certificate__title">Web Full Stack | Let's Code | 2022</h4>
+                            <p class="certificate__description">Curso de desenvolvimento web completo. Passando pelo frontend, backend, react, nodejs, JavaScript e banco de dados.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="languages section" id="languages">
+                    <h3 class="section-title">Languages</h3>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <img src="https://img.icons8.com/fluency/24/000000/brazil-circular.png" alt="Brazil flag"><span>Portuguese</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Interests -->
+                <section class="interests section" id="interests">
+                    <h3 class="section-title">Interests</h3>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bx-ball interests__icon'></i>
+                            <span>Esportes</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-book interests__icon"></i>
+                            <span>Livros</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-movie-play interests__icon"></i>
+                            <span>Filmes e Séries</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-joystick interests__icon"></i>
+                            <span>Games</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <script src="assets/scripts/scripts.js"></script>
+</body>
+</html>

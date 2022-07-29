@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex003.css">
+    <title>EX003</title>
+</head>
+<body>
+    <div class="media">
+        <h1>Média</h1>
+        <span>Digite a 1° nota:</span> <input type="number" name="nota1" id="nota1">
+        <span>Digite a 2° nota:</span> <input type="number" name="nota2" id="nota2">
+        <input type="button" value="calcular média" id="media-btn" onclick="calcula__media(document.getElementById('nota1'), document.getElementById('nota2'))">
+        <div id="resp-media">
+
+        </div>
+    </div>
+
+    <div class="aumento">
+        <h1>Calculadora de aumento</h1>
+        <span>Digite o seu salário R$:</span> <input type="number" name="salario" id="salario">
+        <input type="button" value="Calcular aumento" id="aumento-btn" onclick="calcula__aumento(document.getElementById('salario'))">
+        <output id="resp-aumento"></output>
+    </div>
+
+    <div class="salario-liquido">
+        <h1>Calculadora de salário liquido</h1>
+        <span>Horas trabalhadas:</span> <input type="number" name="horas" id="horas">
+        <br><span id="valor-txt">valor das horas:</span> <input type="number" name="valor-horas" id="valor-horas">
+        <input type="button" value="calcular salário liquido" id="salario-btn" onclick="calcula__salario(document.getElementById('horas'), document.getElementById('valor-horas'))">
+        <br><output id="resp-salario"></output>
+    </div>
+
+    <script src="ex003.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "aula-8",
+  "version": "1.0.0",
+  "description": "Modulo POO",
+  "main": "./classes/uso-de-classes.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./classes/uso-de-classes.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-Leao/POO-JS.git"
+  },
+  "keywords": [
+    "JS",
+    "Node",
+    "Modules"
+  ],
+  "author": "Gabriel Leão",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gabriel-Leao/POO-JS/issues"
+  },
+  "homepage": "https://github.com/Gabriel-Leao/POO-JS#readme"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex001.css">
+    <title>Exercício de fixação 001</title>
+</head>
+<body>
+    <h1>Notas Bimestrais</h1>
+    <div class="notas" id="notas">
+        <span>1° nota <input type="number" name="txt-nota1" id="txt-nota1"></span>
+        <span>2° nota <input type="number" name="txt-nota2" id="txt-nota2"></span>
+        <span>3° nota <input type="number" name="txt-nota3" id="txt-nota3"></span>
+        <span>4° nota <input type="number" name="txt-nota4" id="txt-nota4"></span>
+        <input type="button" value="calcular média" onclick="media()" id="media-btn">
+        <output id="resp-notas"></output>
+    </div>
+
+    <h1>Área circulo</h1>
+    <div class="circulo" id="circulo">
+        <span>Digite o raio do círculo</span> <input type="number" name="raio" id="raio-circulo">
+        <input type="button" value="Calcular área" onclick="circulo()" id="circulo-btn">
+        <output id="resp-circulo"></output>
+    </div>
+
+    <h1>Conversor de temperatura</h1>
+    <div class="conversor" id="conversor">
+        <span>Digite a temperatura em F°</span> <input type="number" name="fahrenheit" id="fahrenheit">
+        <input type="button" value="Converter" onclick="conversor()" id="conversor-btn">
+        <output id="resp-conversor"></output>
+    </div>
+
+    <h1>Sala retangular</h1>
+    <div class="sala" id="sala">
+        <span id="sala-base-txt">Digite a base em M²</span><input type="number" name="sala-base" id="sala-base">
+        <span id="sala-altura-txt">Digite a altura em M²</span><input type="number" name="sala-altura" id="sala-altura">
+        <input type="button" value="Calcular área" onclick="area()" id="sala-area-btn">
+        <input type="button" value="Calcula perímetro" onclick="perimetro()" id="sala-perimetro-btn">
+        <output id="resp-sala-area"></output>
+        <output id="resp-sala-perimetro"></output>
+    </div>
+
+    <h1>Cozinha retangular</h1>
+    <div class="cozinha" id="cozinha">
+        <span id="cozinha-base-txt">Digite a base em M²</span><input type="number" name="cozinha-base" id="cozinha-base">
+        <span id="cozinha-altura-txt">Digite a altura em M²</span><input type="number" name="cozinha-altura" id="cozinha-altura">
+        <input type="button" value="Caixas necessárias" onclick="azulejo()" id="azulejo-btn">
+        <output id="resp-cozinha"></output>
+    </div>
+
+    <script src="ex001.js"></script>
+</body>
+</html>

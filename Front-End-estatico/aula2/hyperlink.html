@@ -1,0 +1,81 @@
+<!-- Elemento de ancora, onde vocẽ liga o texto a algum determinado conteúdo com a tag <a>. Consegue ancorar os seguintes items:
+    - URL
+    - Fragmentos
+    - E-mail
+    - Telefone
+    - Entre Outros.
+ -->
+
+<!-- Ancoragem por URL  -->
+ <div>
+     <p>
+         <a href="https://www.google.com.br">
+             Vai para o site do goole Brasil
+         </a>
+     </p>
+ </div>
+
+ <!-- Faz o download da imagem referenciada -->
+ <div>
+     <p>
+         <a href="../aula1/assets/images/john-lennon.png" download="">
+            Faz o download da imagem
+         </a>
+     </p>
+ </div>
+
+ <!-- Faz uma âncora com o E-mail -->
+ <div>
+     <p>
+         <a href="mailto:gabriellsilva1200@gmail.com" >
+            Entre em contato
+         </a>
+     </p>
+ </div>
+
+ <!-- Âncoragem por Telefone -->
+<div>
+    <p>
+        <a href="tel:+5511947013466" >
+            Ligue para mim
+        </a>
+    </p>
+</div>
+
+ <!-- Ancoragem por Fragmento -->
+ <div>
+    <h1>Sobre nós</h1> 
+    <ul>
+        <li> <a href="#sobre">Sobre nós</a></li>
+        <li><a href="#historia">Nossa historia</a></li>
+    </ul>
+
+    <h2 id="sobre">Sobre nós</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos unde ipsam fuga at! Expedita temporibus beatae maxime quos sed inventore, libero veniam rem recusandae minima distinctio vitae vel labore.
+    </p>
+    <h2 id="historia">Nossa história</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptate, aspernatur voluptatibus ad labore, nemo, adipisci fugiat ut quae eius magni odit eveniet aliquam nostrum impedit excepturi est sunt! Illum?
+    </p>
+ </div>
+
+ <!-- Caminho Absoluto X Caminho Relativo -->
+ <div class="Caminho Absoluto">
+ <p>
+    <!-- A tag target ao invés de substituir a página, leva para uma aba nova-->
+    <a href="https://www.google.com.br" target="_blank" rel="external">
+        Absoluto
+    </a>
+</p>
+<!-- Sempre que o caminho for algo externo do projeto usar caminho obsoluto, ele inclui o protocolo de dominio se for uma url ou seja o https:// -->
+</div>
+
+<div class="Caminho Relativo">
+    <p>
+       <a href="www.google.com.br" target="_blank" rel="external">
+           Relativo
+       </a>
+   </p>
+<!-- Quando for interno pode usar caminho relatuvo-->
+</div>

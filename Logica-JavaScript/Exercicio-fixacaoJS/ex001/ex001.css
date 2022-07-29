@@ -1,0 +1,71 @@
+input {
+    width: 50px;
+}
+
+.notas {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 150px;
+}
+
+.notas #media-btn{
+    align-self: center;
+    justify-self: center;
+    width: 116px;
+}
+
+.circulo {
+    max-width: 245px;
+}
+
+.circulo #circulo-btn {
+    width: 235px;
+}
+
+.conversor {
+    max-width: 280px;
+}
+
+.conversor #conversor-btn {
+    width: 268px;
+}
+
+.sala {
+    display: flex;
+    flex-flow: wrap;
+    max-width: 300px;
+}
+
+.sala #sala-base-txt {
+    padding-right: 20px;
+}
+
+.sala #sala-altura-txt {
+    padding-right: 9px;
+}
+
+.sala #sala-area-btn {
+    width: 228px;
+}
+
+.sala #sala-perimetro-btn {
+    width: 228px;
+}
+
+.cozinha {
+    display: flex;
+    flex-flow: wrap;
+    max-width: 300px;
+}
+
+.cozinha #cozinha-base-txt {
+    padding-right: 20px;
+}
+
+.cozinha #cozinha-altura-txt {
+    padding-right: 9px;
+}
+
+.cozinha #azulejo-btn {
+    width: 228px;
+}

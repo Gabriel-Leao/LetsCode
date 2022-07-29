@@ -1,0 +1,71 @@
+input {
+    width: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.media-produto {
+    max-width: 205px;
+}
+
+#media-produto-btn {
+    width: 185px;
+}
+
+.media-ponderada {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 20px;
+}
+
+.aluno1 {
+    width: 170px;
+    grid-column: 1;
+}
+
+.aluno2 {
+    width: 170px;
+    grid-column: 2;
+}
+
+.peso-prova {
+    padding-right: 2px;
+}
+
+.media-pond-btn {
+    width: 152px;
+}
+
+.produto-pond-btn {
+    width: 168px;
+}
+
+.matricula-txt {
+    padding-right: 30px;
+}
+
+.conta {
+     width: 290px;
+}
+
+.conta input:nth-of-type(1) {
+    width: 60px;
+}
+
+#conta-btn {
+    width: 100px;
+}
+
+.salario {
+    width: 190px;
+}
+
+.salario input:nth-of-type(1) {
+    width: 65px;
+}
+
+#salario-btn {
+    width: 183px;
+}

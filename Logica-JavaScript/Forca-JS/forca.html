@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- link font Source Serif Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <title>Jogo da forca</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo da forca</h1>
+        <h2 class="subtittle">Tente advinhar a palavra</h2>
+    </header>
+    <main>
+        <div class="jogo-container-grid">
+            <div class="forca-conatiner">
+                <svg height="250" width="200" class="forca">
+                    <!-- Forca desenho -->
+                    <line x1="60" y1="20" x2="140" y2="20"/>
+                    <line x1="140" y1="20" x2="140" y2="50"/>
+                    <line x1="60" y1="20" x2="60" y2="230"/>
+                    <line x1="20" y1="230" x2="100" y2="230"/>
+                    <!-- Cabecaça -->
+                    <circle cx="140" cy="70" r="20" class="partes-corpo" fill="white"/>
+                    <!-- Corpo -->
+                    <line x1="140" y1="90" x2="140" y2="150" class="partes-corpo"/>
+                    <!-- Braços -->
+                    <line x1="140" y1="120" x2="120" y2="100" class="partes-corpo"/>
+                    <line x1="140" y1="120" x2="160" y2="100" class="partes-corpo"/>
+                    <!-- Pernas -->
+                    <line x1="140" y1="150" x2="120" y2="180" class="partes-corpo"/>
+                    <line x1="140" y1="150" x2="160" y2="180" class="partes-corpo"/>
+                </svg>
+            </div>
+
+            <div class="letras-erradas">
+                <h3>Letras erradas</h3>
+            </div>
+        </div>
+
+        <div class="letras-certas"></div>
+
+        <div class="letra-repetida">
+            <p>Vocẽ já usou está letra</p>
+        </div>
+
+        <div class="numero">
+            <p>Não digite números, apenas letras</p>
+        </div>
+
+        <div class="upper">
+            <p>Letras maiúsculas não são permitidas</p>
+        </div>
+
+        <div class="popup-container">
+            <div class="popup">
+                <h3 id="mensagem"></h3>
+                <button id="btn-jogar" onclick="reiniciar__jogo()">Jogar novamente</button>
+            </div>
+        </div>
+    </main>
+    <script src="forca.js"></script>
+</body>
+</html>

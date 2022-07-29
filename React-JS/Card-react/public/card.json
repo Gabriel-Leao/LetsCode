@@ -1,0 +1,9 @@
+{
+  "photo": "/foto-perfil.png",
+  "name": "Gabriel Leão",
+  "city": "São Paulo",
+  "description": ["User interface designer and", "front-end developer"],
+  "skills": [
+    "UI / UX", "Front End Development", "HTML", "CSS", "JavaScript", "React", "Node"
+  ]
+}

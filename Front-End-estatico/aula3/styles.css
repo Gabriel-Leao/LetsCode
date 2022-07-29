@@ -1,0 +1,89 @@
+/* Seletor universal, o estilo dele serve para todas as páginas No CSS o que vem depois sobrepões o que vem antes*/
+* {
+    margin: 0%;
+}
+/* Seletor por tag */
+h1 {
+    color: blue;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Seletor por classe  pode-se colocar mais de uma classe separada por vírgula e serve para infitos elementos*/
+.titulo,
+.subtitulo {
+    color: #1e34fc;
+}
+
+/* Seletor por ID, serve para um elemento */
+#negrito {
+    font-weight: bold;
+}
+
+/* Seletor por atributo */
+/* Seleciona todos os elementos <a> que possuem o atributo title */
+a[title] {
+    color: red;
+}
+
+/* Seleciona todos os elementos <a> que possuem o atributo title = "titulo-1" */
+a[title="titulo-1"] {
+    color: black;
+}
+
+/* Seleciona todos os elementos <p> que possuem o atributo class = "texto"
+    ou que possuam na sua lista de classes, a classe "texto" */
+p[class~="texto"] {
+    font-size: 32px;
+}
+
+/* Seleciona todos os elementos <p> que possuem o atributo class = "texto-qualquer"
+    ou inicie por texto-qualquer, seguido de hífen */
+p[class|="texto-qualquer"] {
+    margin-top: 24px;
+}
+
+/* Seleciona todos os elementos <p> que possuem o atributo class = "texto"
+    ou inicie por texto, seguido de hífen */
+p[class|="texto"] {
+    margin-top: 24px;
+}
+
+/* Seleciona todos os elementos <p> cujo atributo class inicia com "texto" */
+p[class^="texto"] {
+    border: 1px solid black;
+}
+
+/* Seleciona todos os elementos <p> cujo atributo class termina com "verde" */
+p[class$="verde"] {
+    color: green;
+}
+
+/* Seleciona elementos <a> com um title contendo "titu" */
+a[title*="titu"] {
+    color: blue;
+}
+ /* O combinador + seleciona os nós que seguem imediatamente o elemento especificado anteriormente. */
+p + br + span {
+    color: red;
+}
+
+/* Seletor gerais de irmãos  */
+p ~ span {
+    color: red;
+}
+
+/* Seletor de filhos */
+ul > li {
+    border-bottom: 1px solid black;
+    color: green;
+}
+
+div > .classe-qualquer {
+    border: 1px solid blue;
+}
+
+div .texto-negrito {
+    font-weight: bolder;
+}

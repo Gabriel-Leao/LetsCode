@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex002.css">
+    <title>Ex 002</title>
+</head>
+<body>
+
+    <h1>Média e Produto</h1>
+    <div class="media-produto">
+        <span>Digite o 1° número</span> <input type="number" name="numero1" id="numero1">
+        <span>Digite o 2° número</span> <input type="number" name="numero2" id="numero2">
+        <input type="button" value="Calcular média e produto" id="media-produto-btn" onclick="calcula__media(document.getElementById('numero1'), document.getElementById('numero2'))">
+        <output id="media-produto"></output>
+    </div>
+
+    <h1>Média ponderada</h1>
+    <div class="media-ponderada">
+        <div class="aluno1">
+            <h2>Aluno 1</h2>
+            <span class="matricula-txt">Matrícula</span> <input type="number" name="matricula" class="matricula" id="matricula-aluno1">
+            <span class="peso-prova">Peso 1° prova</span> <input type="number" name="peso-prova1" class="peso-prova1" id="peso-prova1-aluno1">
+            <span class="peso-prova">Peso 2° prova</span> <input type="number" name="peso-prova2" class="peso-prova2" id="peso-prova2-aluno1">
+            <span>Nota 1° prova</span> <input type="number" name="nota-prova1" class="nota-prova1" id="nota-prova1-aluno1">
+            <span>Nota 2° prova</span> <input type="number" name="nota-prova2" class="nota-prova2" id="nota-prova2-aluno1">
+            <input type="button" value="Média ponderada" class="media-pond-btn" onclick="media__ponderada(document.getElementById('matricula-aluno1'), document.getElementById('peso-prova1-aluno1'), document.getElementById('peso-prova2-aluno1'), document.getElementById('nota-prova1-aluno1'), document.getElementById('nota-prova2-aluno1'), document.getElementById('resp-media-aluno1'))">
+            <output class="media-pond" id="resp-media-aluno1"></output>
+        </div>
+        <div class="aluno2">
+            <h2>Aluno 2</h2>
+            <span class="matricula-txt">Matrícula</span> <input type="number" name="matricula" class="matricula" id="matricula-aluno2">
+            <span class="peso-prova">Peso 1° prova</span> <input type="number" name="peso-prova1" class="peso-prova1" id="peso-prova1-aluno2">
+            <span class="peso-prova">Peso 2° prova</span> <input type="number" name="peso-prova2" class="peso-prova2" id="peso-prova2-aluno2">
+            <span>Nota 1° prova</span> <input type="number" name="nota-prova1" class="nota-prova1" id="nota-prova1-aluno2">
+            <span>Nota 2° prova</span> <input type="number" name="nota-prova2" class="nota-prova2" id="nota-prova2-aluno2">
+            <input type="button" value="Média ponderada" class="media-pond-btn" onclick="media__ponderada(document.getElementById('matricula-aluno2'), document.getElementById('peso-prova2-aluno2'), document.getElementById('peso-prova2-aluno2'), document.getElementById('nota-prova1-aluno2'), document.getElementById('nota-prova2-aluno2'), document.getElementById('resp-media-aluno2'))">
+            <output class="media-pond" id="resp-media-aluno2"></output>
+        </div>
+    </div>
+
+    <h1>Conta</h1>
+    <div class="conta">
+        <span>Valor da conta</span> <input type="number" name="valor" id="valor-conta">
+        <input type="button" value="Valor total" id="conta-btn" onclick="conta(document.getElementById('valor-conta'))">
+        <output id="resp-conta"></output>
+    </div>
+
+    <h1>Calculadora de <br>salário líquido</h1>
+    <div class="salario">
+        <span>Salário bruto R$</span> <input type="number" name="salario-bruto" id="salario-bruto">
+        <input type="button" value="Calcular" id="salario-btn" onclick="salario__liquido()">
+        <output id="resp-valor"></output>
+    </div>
+
+    <script src="ex002.js"></script>
+</body>
+</html>

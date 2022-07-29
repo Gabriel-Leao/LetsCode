@@ -1,0 +1,88 @@
+<!-- 
+    1. ANATOMIA DAS TAGS
+        <ABERTURA> <h1>
+        <FECHAMENTO> </h1>
+        <CONTEÚDO> Fica entre a abertura da tag e o fechamento
+    2. ATRIBUTOS
+        Texto: Armzenado entre as aspas
+        Booleano: True or False
+    3. ATRIBUTOS GLOBAIS
+        kaccesskey:
+            Fornece uma dica para gerar um atalho de teclado para o elemento atual. Este atributo consiste em uma lista de caracteres separados por espaços. O navegador deve usar o primeiro que existe no layout do teclado do computador.
+        class:
+            É uma lista separada por espaço das classes do elemento. as classes permitem ao CSS e ao JavaScript selecionar e acessar elementos específicos atraves dos seletores de classe ou funciona como um método 
+            Document.getElementsByClassName().
+        contenteditable:
+            É um atributo enumerado que indica se o elemento deve ser editado pelo usuário. Se assim for, o navegador modifica seu widget para permitir a edição. O atributo deve ter um dos seguintes valores:
+                true ou uma string vazia, indica que o elemento deve ser editável;
+                false, indica que o elemento não deve ser editável.
+        contextmenu:
+            É o id de um  <menu> (en-US) para usar como o menu contextual para este elemento.
+        data-*:
+            Forma uma classe de atributos, denominado de dados personalizados, que permite troca de informações proprietárias entre o HTML e a sua representação no DOM pode ser usada por scripts. Todos esses dados personalizados estão disponíveis através da interface do elemento HTMLElement em que o atributo está definido. A propriedade  HTMLElement.dataset (en-US)  dá acesso a eles.
+        dir:
+            É um atributo enumerado que indica a direcionalidade do texto do elemento. Pode ter os seguintes valores:
+                ltr, significa da esquerda para a direita e deve ser usado para idiomas que são escritos da esquerda para a direita (como o português do Brasil, inglês, espanhol, etc);
+                rtl, significa da direita para a esquerda e deve ser usado para idiomas que são escritos da direita para a esquerda (como o árabe);
+                auto, que permite que o agente do usuário decida. Ele usa um algoritmo básico, pois analisa os caracteres dentro do elemento até encontrar um caractere com uma direcionalidade forte e, em seguida, aplica essa direcionalidade para todo o elemento.
+        draggable:
+            É um atributo enumerado que indica se o elemento pode ser arrastado, usando a API Drag and Drop. Pode ter os seguintes valores:
+                true, que indica que o elemento pode ser arrastado
+                false, que indica que o elemento não pode ser arrastado.
+        dropzone:
+            É um atributo enumerado que indica quais tipos de conteúdo podem ser descartados em um elemento, usando a API Drag and Drop. Pode ter os seguintes valores:
+                copy, que indica que o lançamento criará uma cópia do elemento que foi arrastado.
+                move, que indica que o elemento que foi arrastado será movido para esta nova localização.
+                link, irá criar um link para os dados arrastados.
+        hidden:
+            Um atributo booleano indica que o elemento ainda não é relevante ou não é mais relevante. Por exemplo, ele pode ser usado para ocultar elementos da página que não podem ser usados até que o processo de login tenha sido concluído. O navegador não renderizará esses elementos. Este atributo não deve ser usado para ocultar conteúdo que possa ser legível.
+        id:
+            Define um identificador exclusivo (ID) que deve ser único em todo o documento. Seu objetivo é identificar o elemento ao vincular (usando um identificador de fragmento), um script ou estilo (com CSS).
+        lang:
+            Participa da definição do idioma do elemento, o idioma no qual os elementos não-editáveis estão escritos, ou o idioma no qual elementos editáveis devem ser escritos. A Tag contém um único valor no formato definido no documento da IEFT Tags para Identificação de Idiomas (BCP47). xml:lang tem prioridade mais alta que lang.
+        spellcheck:
+            É um atributo enumerado que define se o elemento pode ser verificado por errors de ortografia. Pode ter os seguintes valores:
+
+                true, indica que o elemento deve ser, se possível, verificado por errors ortográficos;
+                false, indica que o elemento não deve ser verificado quanto à ortogratia do texto.
+        style:
+            Contém regras de declarações CSS para aplicar no elemento. Note que é recomendado que as regras CSS fiquem num arquivo, ou vários arquivos, separado do HTML. Este atributo e o elemento <style> tem principalmente o propósito para rápida estilização do elemento, como por exemplo para testes.
+        tabindex:
+            É um atributo que recebe valores inteiros e indica se um elemento pode receber o foco de entrada de valores (é focável), se ele deve entrar na sequência da navegação pelo teclado (através da tecla TAB, e qual posição da sequência. Sobre seus valores:
+                um valor negativo  indica que o elemento é focável, mas não é alcançável pela navegação sequencial do teclado (através da tecla TAB);
+                0 indica que o elemento é focável e alcançavel pela navegação sequencial do teclado, mas sua ordem de seleção relativa é definida pela convenção da plataforma (ou do navegador);
+                um valor positivo indica que o elemento é focável e alcançável pela navegação sequencial do teclado; sua ordem de seleção relativa é definida pelo valor colocado: a sequência segue em ordem crescente definida no tabindex. Se vários elementos possuem o mesmo valor de tabindex, sua ordem relativa é estabelecida pela posição relativa no documento HTML.
+        title:
+            Contém um texto representativo sobre a informação relacionada ao elemento ao qual este atributo pertence. Tal informação pode, mas não necessariamente, ser apresentada através de um tooltip.
+        translate:
+            É um atributo enumerado, usado para especificar se um atributo de um elemento e os valores dos seus nós descendentes (filhos) Text (en-US) serão traduzidos quando a página for localizada, ou se não serão alterados. Pode ter os seguintes valores:
+                . yes ou string vazia: indicam que o elemento será traduzido;
+                . no: indica que o elemento não será traduzido.
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Lennon</title>
+</head>
+<body>
+    <img src="assets/images/john-lennon.png" alt="Desenho John Lennon">
+    <!-- A tag img coloca uma imagem no seu documento, basta passar o caminho para ela através de aspas no src"escreva o caminho aqui. No exemplo acima um desenho de john lennon" -->
+    <h1>Cabeçalho nível 1</h1>
+    <h2>Cabeçalho nível 2</h2>
+    <h3>Cabeçalho nível 3</h3>
+    <h4>Cabeçalho nível 4</h4>
+    <h5>Cabeçalho nível 5</h5>
+    <h6>Cabeçalho nível 6</h6>
+    <!-- Os elementos <h1>/<h6> representam seis níveis de título. <h1> é o nível mais alto e <h6> o mais baixo -->
+    <p>
+    Como quebrar parágrafo:<br>
+    É muito simples basta inserir a tag &lt;br&gt; e o parágrafo será quebrado.
+    </p>
+    <!-- A tag <br> significa break row, ela quebra a linha  e pode ser usada tanto em parágrafo quanto em título. lt significa LESS THAN / GREATER THAN-->
+    <p>Vamos adicionar algum emoji: &#x1F981;</p>
+    <!-- Para adicionar um emoji precisamos digitar &#x além do código do emoji que você acha no site emojipedia. o & conercial é sempre usado no código de simbolos e emojis.-->
+</html>

@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 60px;
+}
+
+.media {
+    max-width: 220px;
+}
+
+#media-btn {
+    width: 177px;
+}
+
+.aumento {
+    max-width: 225px;
+}
+
+#aumento-btn {
+    width: 223px;
+}
+
+.salario-liquido {
+    max-width: 250px;
+}
+
+#valor-txt {
+    padding-right: 19px;
+}
+
+#salario-btn {
+    width: 192px;
+}

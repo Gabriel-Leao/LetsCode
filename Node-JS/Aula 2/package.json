@@ -1,0 +1,14 @@
+{
+  "name": "aula2",
+  "version": "1.0.0",
+  "description": "Projeto feito na segunda aula do projeto",
+  "main": "aula2.js",
+  "scripts": {
+    "start": "node aula2.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Gabriel Leão da Silva",
+  "license": "MIT"
+}

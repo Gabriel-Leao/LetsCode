@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex004.css"> 
+    <title>Ex004</title>
+</head>
+<body>
+    <div class="lista__impar">
+        <h1>Listar Ímpares</h1>
+        <span>De:</span> <input type="number" name="contador" id="contador">
+        <span>Até:</span> <input type="number" name="destino" id="destino">
+        <input type="button" value="Mostrar ímpares" onclick="listar__impar(document.getElementById('contador'), document.getElementById('destino'))" id="impar-btn">
+        <div id="resp__impar"></div>
+    </div>
+
+    <div class="multiplicar">
+        <h1>Tabuada</h1>
+        <span>Digite o número que deseja ver a tabuada</span> <input type="number" name="fator" id="fator">
+        <span>até</span> <input type="number" name="fim" id="fim">
+        <input type="button" value="Ver tabuada" onclick="tabuada(document.getElementById('fator'), document.getElementById('fim'))" id="tabuada-btn">
+        <div id="resp-tabuada"></div>
+    </div>
+
+    <div>
+        <h1>Lista</h1>
+        <span>Digite um número</span> <input type="number" name="Numero" id="Numero"><br>
+        <input type="button" value="adicionar na lista" onclick="adicionar(document.getElementById('Numero'))" id="adicionar-btn"><br>
+        <input type="button" value="Mostrar Lista" onclick="mostrar__lista()" id="resp-mostrar-btn"><br>
+        <input type="button" value="Maior na Lista" onclick="maior__lista()" id="resp-maior-lista-btn"><br>
+        <input type="button" value="Menor na Lista" onclick="menor__lista()" id="resp-menor-lista-btn"><br>
+        <div class="respostas__lista">
+            <output id="resp-lista"></output>
+            <output id="resp-maior-lista"></output>
+            <output id="resp-menor-lista"></output>
+        </div>
+    </div>
+
+    <script src="ex004.js"></script>
+</body>
+</html>
